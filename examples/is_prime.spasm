@@ -21,7 +21,7 @@
     dup asi32
     dup si32
     lst asi32 si32
-    jnz asi32 0xFFFFFFFFFFFFFFF5
+    jnz asi32 0xFFFFFFF5
 
     dat si 0x0
     prn si
