@@ -1,0 +1,27 @@
+.dat
+    s "Is a prime!"
+    s "Is not a prime..."
+
+.reg
+    si32 0xB ; We'll load 11 into the register as our input
+
+.txt
+    psh asi32 0x2
+
+    cpy tsi32 si32
+    dup asi32
+    mod asi32 tsi32
+    jnz asi32 0x4
+
+    dat si 0x1
+    prn si
+    end
+
+    add asi32 0x1
+    dup asi32
+    dup si32
+    lst asi32 si32
+    jnz csi32 0xFFFFFFFFFFFFFFF5
+
+    dat si 0x0
+    prn si
